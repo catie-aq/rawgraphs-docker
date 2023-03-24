@@ -23,8 +23,10 @@ services:
 git clone https://github.com/hvalev/rawgraphs-docker.git/
 cd rawgraphs-docker
 docker build -t raw-graphs .
-docker run -p 8080:4000 raw-graphs
+docker run -p 3000:3000 raw-graphs
 ```
+
+
 
 ## Improvements
 Used a multi-stage build to decrease the size of the final image by a factor of 10! and upgraded it to use python3.
